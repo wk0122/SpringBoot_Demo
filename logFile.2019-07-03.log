@@ -1,0 +1,1077 @@
+2019-07-03 13:58:19.872 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 13:58:19.966 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 13:58:19.967 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 13:58:26.951 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 13:58:26.989 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 13:58:26.989 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 13:58:27.477 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 13:58:27.958 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 13:58:29.794 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-03 13:58:37.714 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 13:58:37.908 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 21.569 seconds (JVM running for 42.758)
+2019-07-03 13:59:07.101 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 13:59:10.008 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-02T23:53:28Z. Current time: 2019-07-03T13:59:09Z, a difference of 50741930 milliseconds.  Allowed clock skew: 0 milliseconds.] with root cause
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-02T23:53:28Z. Current time: 2019-07-03T13:59:09Z, a difference of 50741930 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:52)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 13:59:10.043 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-02T23:53:28Z. Current time: 2019-07-03T13:59:10Z, a difference of 50742040 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:52)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 13:59:10.045 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-02T23:53:28Z. Current time: 2019-07-03T13:59:10Z, a difference of 50742040 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-02T23:53:28Z. Current time: 2019-07-03T13:59:10Z, a difference of 50742040 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:52)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+2019-07-03 13:59:40.049 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-03 13:59:40.121 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-03 13:59:40.778 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 13:59:40.778 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 13:59:40.778 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 13:59:41.682 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 13:59:41.683 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 13:59:41.683 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 13:59:43.204 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 13:59:43.328 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 13:59:43.713 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-03 13:59:44.621 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 13:59:44.625 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.917 seconds (JVM running for 109.475)
+2019-07-03 13:59:54.207 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 13:59:54.211 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 13:59:54.211 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 13:59:57.322 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 13:59:57.337 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 13:59:57.337 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 13:59:57.619 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 13:59:57.895 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 13:59:58.639 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-03 14:00:00.340 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:00:00.446 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 7.024 seconds (JVM running for 7.828)
+2019-07-03 14:00:31.714 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:02:09.600 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-03 14:02:09.642 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-03 14:02:10.346 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:02:10.347 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:02:10.347 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:02:11.232 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:02:11.233 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:02:11.233 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:02:11.286 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:02:11.337 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:02:11.435 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-03 14:02:12.473 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:02:12.478 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.28 seconds (JVM running for 139.86)
+2019-07-03 14:02:20.339 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-07-03 14:02:20.369 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-07-03 14:02:20.985 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:02:20.986 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:02:20.986 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:02:21.795 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:02:21.796 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:02:21.796 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:02:21.881 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:02:21.940 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:02:22.216 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-07-03 14:02:22.992 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:02:22.998 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.081 seconds (JVM running for 150.38)
+2019-07-03 14:03:59.123 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-07-03 14:03:59.130 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-07-03 14:03:59.626 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:03:59.626 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:03:59.626 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:00.043 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:00.044 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:00.048 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:00.074 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:00.112 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:00.196 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-07-03 14:04:00.749 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:00.754 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.164 seconds (JVM running for 248.137)
+2019-07-03 14:04:06.157 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-07-03 14:04:06.160 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-07-03 14:04:06.661 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:06.661 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:06.661 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:08.161 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:08.162 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:08.162 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:08.189 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:08.321 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:08.395 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-07-03 14:04:08.465 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-07-03 14:04:08.470 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-07-03 14:04:08.471 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:04:12.328 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:12.328 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:12.328 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:13.716 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:13.717 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:13.717 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:13.756 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:13.897 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:15.178 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-07-03 14:04:15.238 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-07-03 14:04:15.243 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-07-03 14:04:15.245 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:04:20.454 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:20.455 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:20.455 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:20.869 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:20.870 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:20.870 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:20.911 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:20.949 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:21.020 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-07-03 14:04:21.120 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-7} closing ...
+2019-07-03 14:04:21.154 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-7} closed
+2019-07-03 14:04:21.155 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:04:23.024 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:23.025 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:23.025 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:23.653 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:23.653 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:23.653 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:23.681 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-3].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:23.739 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:23.837 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-8} inited
+2019-07-03 14:04:24.486 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:24.491 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.503 seconds (JVM running for 271.873)
+2019-07-03 14:04:33.214 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-8} closing ...
+2019-07-03 14:04:33.257 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-8} closed
+2019-07-03 14:04:34.127 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:34.127 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:34.128 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:34.638 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:34.639 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:34.639 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:34.656 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-3].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:34.699 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:34.755 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-9} inited
+2019-07-03 14:04:35.365 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:35.370 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.283 seconds (JVM running for 282.752)
+2019-07-03 14:04:38.934 [ Thread-43 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-9} closing ...
+2019-07-03 14:04:38.938 [ Thread-43 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-9} closed
+2019-07-03 14:04:39.486 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:39.487 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:39.487 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:41.129 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:41.130 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:41.130 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:41.166 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-3].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:41.233 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:41.318 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-10} inited
+2019-07-03 14:04:41.554 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-10} closing ...
+2019-07-03 14:04:41.564 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-10} closed
+2019-07-03 14:04:41.565 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:04:46.481 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:46.482 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:46.482 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:47.707 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:47.708 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:47.708 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:47.732 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-4].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:47.801 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:47.889 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-11} inited
+2019-07-03 14:04:47.964 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-11} closing ...
+2019-07-03 14:04:47.970 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-11} closed
+2019-07-03 14:04:47.971 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:04:52.770 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:04:52.770 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:04:52.770 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:04:53.501 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:04:53.501 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:04:53.502 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:04:53.519 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:04:53.555 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:04:53.619 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-12} inited
+2019-07-03 14:04:53.720 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-12} closing ...
+2019-07-03 14:04:53.722 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-12} closed
+2019-07-03 14:04:53.722 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:05:00.807 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:00.807 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:00.808 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:01.489 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:01.489 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:01.490 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:01.514 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-6].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:01.563 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:01.652 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-13} inited
+2019-07-03 14:05:02.402 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:02.406 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.645 seconds (JVM running for 309.788)
+2019-07-03 14:05:03.860 [ Thread-49 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-13} closing ...
+2019-07-03 14:05:03.875 [ Thread-49 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-13} closed
+2019-07-03 14:05:04.830 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:04.831 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:04.831 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:05.288 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:05.289 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:05.289 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:05.306 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-6].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:05.338 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:05.396 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-14} inited
+2019-07-03 14:05:05.462 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-14} closing ...
+2019-07-03 14:05:05.473 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-14} closed
+2019-07-03 14:05:05.477 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:05:07.261 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:07.262 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:07.262 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:07.690 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:07.691 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:07.692 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:07.706 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-7].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:07.747 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:07.823 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-15} inited
+2019-07-03 14:05:08.783 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:08.788 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.562 seconds (JVM running for 316.17)
+2019-07-03 14:05:27.409 [ Thread-64 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-15} closing ...
+2019-07-03 14:05:27.412 [ Thread-64 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-15} closed
+2019-07-03 14:05:28.274 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:28.275 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:28.275 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:28.914 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:28.914 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:28.915 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:28.929 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-7].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:28.970 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:29.091 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-16} inited
+2019-07-03 14:05:29.498 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-16} closing ...
+2019-07-03 14:05:29.511 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-16} closed
+2019-07-03 14:05:29.512 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:05:35.410 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:35.411 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:35.412 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:36.371 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:36.372 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:36.372 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:36.389 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-8].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:36.438 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:36.498 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-17} inited
+2019-07-03 14:05:36.549 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-17} closing ...
+2019-07-03 14:05:36.553 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-17} closed
+2019-07-03 14:05:36.554 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:05:41.491 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:41.492 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:41.492 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:51.112 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:05:51.116 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:05:51.116 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:05:54.742 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:54.754 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:05:54.755 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:05:54.877 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:05:55.112 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:05:55.671 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-03 14:05:56.890 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:05:56.919 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 6.457 seconds (JVM running for 7.329)
+2019-07-03 14:06:13.942 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:09:46.493 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-03 14:09:46.592 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-03 14:09:47.407 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:09:47.408 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:09:47.408 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:09:47.985 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:09:47.986 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:09:47.986 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:09:48.016 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:09:48.070 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:09:48.160 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-03 14:09:48.220 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-07-03 14:09:48.223 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-07-03 14:09:48.224 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:10:05.241 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:10:05.241 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:10:05.242 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:10:05.796 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:10:05.803 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:10:05.810 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:10:05.866 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:10:05.948 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:10:06.084 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-07-03 14:10:06.166 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-07-03 14:10:06.171 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-07-03 14:10:06.173 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:10:08.046 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:10:08.046 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:10:08.046 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:10:08.762 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:10:08.767 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:10:08.767 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:10:08.795 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:10:08.864 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:10:08.912 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-07-03 14:10:09.433 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:10:09.439 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.449 seconds (JVM running for 259.849)
+2019-07-03 14:11:07.065 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-07-03 14:11:07.071 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-07-03 14:11:07.642 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:11:07.643 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:11:07.647 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:11:09.703 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:11:09.704 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:11:09.704 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:11:10.257 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:11:10.257 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:11:10.257 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:11:10.288 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:11:10.329 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:11:10.389 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-07-03 14:11:11.083 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:11:11.088 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.41 seconds (JVM running for 321.498)
+2019-07-03 14:11:21.051 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:14:01.615 [ http-nio-8081-exec-3 ] - [ INFO  ] [ org.apache.tomcat.util.http.Parameters : 173 ] - Character decoding failed. Parameter [���� JFIF      �� C 		
+ $.' ",#(7),01444'9] with value [82<.342ÿÛ C			2!!22222222222222222222222222222222222222222222222222ÿÀ ¸¸" ÿÄ           	
+ÿÄ µ   } !1AQa"q2¡#B±ÁRÑð$3br	
+%] has been ignored. Note that the name and value quoted here may be corrupted due to the failed decoding. Use debug level logging to see the original, non-corrupted values.
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2019-07-03 14:14:01.747 [ http-nio-8081-exec-3 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:194)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:113)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 14:14:01.786 [ http-nio-8081-exec-3 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.NullPointerException: null
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:38)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 14:14:01.788 [ http-nio-8081-exec-3 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat-2].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:38)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+2019-07-03 14:20:45.781 [ http-nio-8081-exec-4 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:38)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 14:20:45.807 [ http-nio-8081-exec-4 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.NullPointerException: null
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:38)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-07-03 14:20:45.817 [ http-nio-8081-exec-4 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat-2].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:38)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+2019-07-03 14:27:35.553 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-07-03 14:27:35.642 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-07-03 14:27:37.132 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:27:37.133 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:27:37.133 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:27:43.999 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:27:44.000 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:27:44.000 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:27:45.302 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:27:45.302 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:27:45.302 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:27:45.345 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:27:45.393 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:27:45.532 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-07-03 14:27:46.330 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:27:46.334 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.365 seconds (JVM running for 1316.744)
+2019-07-03 14:27:52.081 [ Thread-31 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-07-03 14:27:52.279 [ Thread-31 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-07-03 14:27:53.030 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:27:53.030 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:27:53.030 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:27:53.903 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:27:53.903 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:27:53.904 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:27:53.935 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:27:53.989 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:27:54.037 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-07-03 14:27:54.553 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:27:54.557 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.612 seconds (JVM running for 1324.968)
+2019-07-03 14:27:59.277 [ Thread-40 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-7} closing ...
+2019-07-03 14:27:59.307 [ Thread-40 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-7} closed
+2019-07-03 14:27:59.777 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:27:59.778 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:27:59.778 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:28:02.071 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:28:02.084 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:28:02.084 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:28:02.804 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:28:02.805 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:28:02.805 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:28:02.821 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:28:02.862 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:28:02.917 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-8} inited
+2019-07-03 14:28:03.595 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:28:03.601 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.813 seconds (JVM running for 1334.011)
+2019-07-03 14:28:07.043 [ Thread-46 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-8} closing ...
+2019-07-03 14:28:08.153 [ Thread-46 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-8} closed
+2019-07-03 14:28:08.809 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:28:08.809 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:28:08.809 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:28:09.356 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:28:09.357 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:28:09.358 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:28:09.378 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:28:09.475 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:28:09.574 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-9} inited
+2019-07-03 14:28:10.195 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:28:10.202 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.427 seconds (JVM running for 1340.612)
+2019-07-03 14:28:22.388 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:29:01.978 [ Thread-55 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-9} closing ...
+2019-07-03 14:29:01.993 [ Thread-55 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-9} closed
+2019-07-03 14:29:02.459 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:29:02.459 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:29:02.460 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:29:05.763 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:29:05.765 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:29:05.765 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:29:07.327 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:29:07.327 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:29:07.328 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:29:07.344 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:29:07.375 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:29:07.459 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-10} inited
+2019-07-03 14:29:07.969 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:29:07.979 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.332 seconds (JVM running for 1398.389)
+2019-07-03 14:29:51.947 [ Thread-61 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-10} closing ...
+2019-07-03 14:29:51.952 [ Thread-61 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-10} closed
+2019-07-03 14:29:52.460 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:29:52.461 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:29:52.461 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:29:55.209 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:29:55.210 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:29:55.210 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:29:55.630 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:29:55.630 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:29:55.631 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:29:55.648 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:29:55.679 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:29:55.734 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-11} inited
+2019-07-03 14:29:56.285 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:29:56.290 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.101 seconds (JVM running for 1446.7)
+2019-07-03 14:30:33.565 [ Thread-70 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-11} closing ...
+2019-07-03 14:30:33.587 [ Thread-70 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-11} closed
+2019-07-03 14:30:34.337 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:30:34.337 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:30:34.338 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:30:37.195 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:30:37.196 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:30:37.196 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:30:37.552 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:30:37.553 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:30:37.553 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:30:37.569 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:30:37.602 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:30:37.676 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-12} inited
+2019-07-03 14:30:38.165 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:30:38.171 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 0.992 seconds (JVM running for 1488.581)
+2019-07-03 14:30:49.702 [ Thread-79 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-12} closing ...
+2019-07-03 14:30:49.711 [ Thread-79 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-12} closed
+2019-07-03 14:30:50.402 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:30:50.402 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:30:50.402 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:30:53.167 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11552 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:30:53.168 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:30:53.168 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:30:54.501 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:30:54.502 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:30:54.502 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:30:54.521 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:30:54.560 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:30:54.631 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-13} inited
+2019-07-03 14:30:55.115 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:30:55.120 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.976 seconds (JVM running for 1505.53)
+2019-07-03 14:31:15.080 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:31:32.458 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:31:32.466 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:31:32.467 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:31:38.708 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:31:38.746 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:31:38.747 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:31:38.937 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:31:39.218 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:31:39.982 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-03 14:31:42.598 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:31:42.632 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 13.556 seconds (JVM running for 15.292)
+2019-07-03 14:32:25.772 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-03 14:37:05.607 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-03 14:37:05.676 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-03 14:37:06.444 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:37:06.444 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:37:06.445 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:37:07.467 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:37:07.468 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:37:07.468 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:37:07.708 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:37:07.763 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:37:19.680 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:37:19.681 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:37:19.682 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:37:20.296 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:37:20.297 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:37:20.297 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:37:20.378 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:37:20.407 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:37:23.163 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:37:23.164 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:37:23.164 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:37:24.311 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:37:24.312 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:37:24.313 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:37:24.348 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:37:24.459 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:37:24.618 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-03 14:37:25.205 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:37:25.213 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.15 seconds (JVM running for 357.872)
+2019-07-03 14:38:51.472 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-07-03 14:38:51.479 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-07-03 14:38:52.720 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:38:52.721 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:38:52.721 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:38:53.626 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:38:53.626 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:38:53.627 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:38:53.671 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:38:53.744 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:38:53.904 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-07-03 14:38:55.893 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:38:55.897 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.286 seconds (JVM running for 448.557)
+2019-07-03 14:39:01.013 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-07-03 14:39:01.021 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-07-03 14:39:02.000 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:39:02.000 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:39:02.001 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:39:02.619 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:02.620 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:39:02.620 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:39:02.653 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:39:02.694 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:39:16.817 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:39:16.817 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:39:16.817 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:39:17.457 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:17.458 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:39:17.458 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:39:17.473 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-3].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:39:17.497 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:39:30.012 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:39:30.012 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:39:30.012 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:39:30.668 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:30.669 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:39:30.670 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:39:30.713 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-4].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:39:30.768 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:39:30.912 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-07-03 14:39:31.831 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:31.835 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.873 seconds (JVM running for 484.494)
+2019-07-03 14:39:35.399 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-07-03 14:39:35.403 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-07-03 14:39:35.928 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:39:35.929 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:39:35.929 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:39:37.502 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:37.502 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:39:37.505 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:39:37.540 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-4].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:39:37.594 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-07-03 14:39:54.495 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:39:54.496 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:39:54.496 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:39:55.028 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:55.029 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:39:55.029 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:39:55.049 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:39:55.092 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:39:55.164 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-07-03 14:39:56.118 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:39:56.123 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.661 seconds (JVM running for 508.781)
+2019-07-03 14:40:48.766 [ Thread-40 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-07-03 14:40:48.795 [ Thread-40 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-07-03 14:40:49.341 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:40:49.341 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:40:49.341 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:40:49.769 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:40:49.772 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:40:49.772 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:40:49.792 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:40:49.897 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:40:50.015 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-07-03 14:40:51.020 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:40:51.026 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.715 seconds (JVM running for 563.685)
+2019-07-03 14:43:11.840 [ Thread-49 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-07-03 14:43:11.849 [ Thread-49 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-07-03 14:43:12.505 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:43:12.505 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:43:12.505 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:43:12.965 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:12.965 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:43:12.965 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:43:12.980 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:43:13.047 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:43:13.147 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-07-03 14:43:14.141 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:14.146 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.701 seconds (JVM running for 706.805)
+2019-07-03 14:43:15.825 [ Thread-55 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-7} closing ...
+2019-07-03 14:43:15.865 [ Thread-55 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-7} closed
+2019-07-03 14:43:16.734 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:43:16.734 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:43:16.735 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:43:17.353 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:17.354 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:43:17.354 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:43:17.389 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:43:17.539 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:43:17.661 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-8} inited
+2019-07-03 14:43:18.709 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:18.715 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.023 seconds (JVM running for 711.373)
+2019-07-03 14:43:23.654 [ Thread-61 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-8} closing ...
+2019-07-03 14:43:23.661 [ Thread-61 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-8} closed
+2019-07-03 14:43:24.743 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:43:24.743 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:43:24.744 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:43:25.831 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:25.832 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:43:25.833 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:43:25.858 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:43:25.923 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:43:26.043 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-9} inited
+2019-07-03 14:43:27.523 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:27.531 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.848 seconds (JVM running for 720.189)
+2019-07-03 14:43:36.055 [ Thread-67 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-9} closing ...
+2019-07-03 14:43:36.159 [ Thread-67 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-9} closed
+2019-07-03 14:43:36.823 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:43:36.824 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:43:36.824 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:43:37.326 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:37.326 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:43:37.327 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:43:37.351 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:43:37.410 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:43:37.608 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-10} inited
+2019-07-03 14:43:38.902 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:38.910 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.122 seconds (JVM running for 731.569)
+2019-07-03 14:43:56.344 [ Thread-73 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-10} closing ...
+2019-07-03 14:43:56.347 [ Thread-73 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-10} closed
+2019-07-03 14:43:57.068 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:43:57.068 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:43:57.068 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:43:57.640 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:57.640 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:43:57.641 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:43:57.662 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:43:57.702 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:43:57.762 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-11} inited
+2019-07-03 14:43:58.297 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:43:58.302 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.329 seconds (JVM running for 750.961)
+2019-07-03 14:44:20.119 [ Thread-79 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-11} closing ...
+2019-07-03 14:44:20.130 [ Thread-79 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-11} closed
+2019-07-03 14:44:21.075 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:44:21.076 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:44:21.076 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:44:21.465 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:21.466 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:44:21.466 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:44:21.499 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:44:21.548 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:44:21.616 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-12} inited
+2019-07-03 14:44:22.287 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:22.291 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.26 seconds (JVM running for 774.951)
+2019-07-03 14:44:29.712 [ Thread-85 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-12} closing ...
+2019-07-03 14:44:29.715 [ Thread-85 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-12} closed
+2019-07-03 14:44:30.209 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:44:30.209 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:44:30.209 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:44:30.867 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:30.868 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:44:30.868 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:44:30.891 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:44:30.933 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:44:30.985 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-13} inited
+2019-07-03 14:44:31.482 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:31.487 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.329 seconds (JVM running for 784.146)
+2019-07-03 14:44:33.881 [ Thread-91 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-13} closing ...
+2019-07-03 14:44:33.891 [ Thread-91 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-13} closed
+2019-07-03 14:44:35.116 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:44:35.117 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:44:35.117 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:44:36.067 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:36.068 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:44:36.068 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:44:36.093 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:44:36.163 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:44:36.230 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-14} inited
+2019-07-03 14:44:36.871 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:36.877 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.812 seconds (JVM running for 789.536)
+2019-07-03 14:44:41.293 [ Thread-97 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-14} closing ...
+2019-07-03 14:44:41.360 [ Thread-97 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-14} closed
+2019-07-03 14:44:41.798 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:44:41.798 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:44:41.798 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:44:42.483 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:42.484 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:44:42.484 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:44:42.501 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:44:42.541 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:44:42.605 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-15} inited
+2019-07-03 14:44:43.129 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:44:43.133 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.378 seconds (JVM running for 795.792)
+2019-07-03 14:52:36.052 [ Thread-103 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-15} closing ...
+2019-07-03 14:52:36.165 [ Thread-103 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-15} closed
+2019-07-03 14:52:37.544 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:52:37.544 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:52:37.544 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:52:48.614 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2688 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:52:48.615 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:52:48.615 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:52:49.377 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:52:49.378 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:52:49.378 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:52:49.400 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-5].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:52:49.458 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:52:49.600 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-16} inited
+2019-07-03 14:52:50.600 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:52:50.607 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.056 seconds (JVM running for 1283.266)
+2019-07-03 14:53:02.066 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 13692 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-03 14:53:02.070 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-03 14:53:02.071 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-03 14:53:06.549 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:53:06.563 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-03 14:53:06.563 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-03 14:53:06.678 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-03 14:53:06.917 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-03 14:53:07.378 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-03 14:53:09.189 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-03 14:53:09.249 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 10.101 seconds (JVM running for 11.709)
+2019-07-03 14:53:36.642 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'

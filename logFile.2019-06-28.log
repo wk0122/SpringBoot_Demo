@@ -1,0 +1,877 @@
+2019-06-28 20:19:37.838 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 14952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:19:37.867 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:19:37.868 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:19:44.140 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:19:44.191 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:19:44.192 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:19:44.381 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:19:44.679 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:19:45.592 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-06-28 20:19:48.956 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:19:48.984 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 14.078 seconds (JVM running for 17.494)
+2019-06-28 20:20:28.576 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:22:22.012 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-06-28 20:22:22.137 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-06-28 20:22:23.400 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 14952 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:22:23.400 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:22:23.400 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:22:24.343 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:22:24.344 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:22:24.345 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:22:24.648 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:22:24.737 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:22:24.871 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-06-28 20:22:25.364 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:22:25.372 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.081 seconds (JVM running for 173.881)
+2019-06-28 20:22:43.165 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:22:43.283 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb] with root cause
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:22:43.308 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:22:43.310 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:554)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	... 35 common frames omitted
+2019-06-28 20:24:16.604 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-06-28 20:24:16.650 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-06-28 20:24:31.221 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11008 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:24:31.226 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:24:31.226 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:24:35.757 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:24:35.785 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:24:35.785 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:24:35.988 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:24:36.391 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:24:36.900 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-06-28 20:24:39.328 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:24:39.372 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 9.931 seconds (JVM running for 11.042)
+2019-06-28 20:24:46.021 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:24:46.260 [ http-nio-8081-exec-1 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb] with root cause
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:24:46.274 [ http-nio-8081-exec-1 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:24:46.277 [ http-nio-8081-exec-1 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.jsonwebtoken.MalformedJwtException: Unable to read JSON value: �z��&�r#�$�3#Sb
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:554)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:252)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal character ((CTRL-CHAR, code 5)): only regular white space (\r, \n, \t) is allowed between tokens
+ at [Source: (String)"�z��&�r#�$�3#Sb"; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._throwInvalidSpace(ParserMinimalBase.java:644)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2358)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:656)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)
+	at io.jsonwebtoken.impl.DefaultJwtParser.readValue(DefaultJwtParser.java:552)
+	... 35 common frames omitted
+2019-06-28 20:28:14.991 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2748 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:28:14.995 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:28:14.996 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:28:18.184 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:28:18.197 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:28:18.198 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:28:18.341 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:28:18.613 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:28:19.153 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-06-28 20:28:20.310 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:28:20.383 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 6.864 seconds (JVM running for 7.934)
+2019-06-28 20:28:40.131 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:28:41.070 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:28:41.280 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: 1(String)
+2019-06-28 20:28:41.674 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 1
+2019-06-28 20:28:41.915 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:28:41.916 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: null
+2019-06-28 20:28:41.945 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 0
+2019-06-28 20:28:42.183 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response] with root cause
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:83)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:255)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:122)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:28:42.193 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:28:42.194 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: 1(String)
+2019-06-28 20:28:42.196 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 1
+2019-06-28 20:28:42.218 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:83)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:255)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:225)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:122)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:28:42.222 [ http-nio-8081-exec-2 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:547)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:83)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:255)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:225)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:122)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+2019-06-28 20:29:22.159 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-06-28 20:29:22.281 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-06-28 20:29:22.918 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2748 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:29:22.918 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:29:22.919 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:29:23.889 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:29:23.890 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:29:23.890 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:29:24.001 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:29:24.042 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-06-28 20:29:36.678 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15564 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:29:36.681 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:29:36.682 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:29:40.087 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:29:40.103 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:29:40.104 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:29:40.379 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:29:40.755 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:29:41.279 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-06-28 20:29:42.267 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:29:42.355 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 6.738 seconds (JVM running for 7.509)
+2019-06-28 20:29:48.878 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:29:49.244 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:29:49.429 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: 1(String)
+2019-06-28 20:29:49.665 [ http-nio-8081-exec-1 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 1
+2019-06-28 20:49:19.524 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-06-28 20:49:20.142 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-06-28 20:49:21.472 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15564 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:49:21.473 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:49:21.473 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:49:23.067 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:49:23.068 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:49:23.069 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:49:23.188 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:49:23.255 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-06-28 20:49:27.117 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15564 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:49:27.117 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:49:27.118 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:49:29.394 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:49:29.394 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:49:29.395 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:49:29.424 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:49:29.501 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:49:29.662 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-06-28 20:49:30.592 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:49:30.604 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.607 seconds (JVM running for 1195.758)
+2019-06-28 20:50:29.315 [ http-nio-8081-exec-9 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:50:29.529 [ http-nio-8081-exec-9 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] in context with path [/boot] threw exception [Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-06-28T20:32:29Z. Current time: 2019-06-28T20:50:29Z, a difference of 1080348 milliseconds.  Allowed clock skew: 0 milliseconds.] with root cause
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-06-28T20:32:29Z. Current time: 2019-06-28T20:50:29Z, a difference of 1080348 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:50:29.622 [ http-nio-8081-exec-9 ] - [ ERROR ] [ o.a.c.c.C.[.[.[/boot].[dispatcherServlet] : 175 ] - Servlet.service() for servlet [dispatcherServlet] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-06-28T20:32:29Z. Current time: 2019-06-28T20:50:29Z, a difference of 1080620 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-06-28 20:50:29.624 [ http-nio-8081-exec-9 ] - [ ERROR ] [ o.a.c.core.ContainerBase.[Tomcat-1].[localhost] : 175 ] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-06-28T20:32:29Z. Current time: 2019-06-28T20:50:29Z, a difference of 1080620 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-06-28T20:32:29Z. Current time: 2019-06-28T20:50:29Z, a difference of 1080620 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.aistar.util.TokenUtil.paraseToken(TokenUtil.java:53)
+	at com.aistar.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:50)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1034)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+2019-06-28 20:51:14.353 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-06-28 20:51:14.358 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-06-28 20:51:15.338 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15564 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:51:15.339 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:51:15.339 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:51:16.164 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:51:16.165 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:51:16.166 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:51:16.190 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:51:16.247 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:51:16.605 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-06-28 20:51:18.161 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:51:18.343 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.107 seconds (JVM running for 1303.498)
+2019-06-28 20:51:19.565 [ Thread-19 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-06-28 20:51:19.566 [ Thread-19 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-06-28 20:51:29.751 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:51:29.755 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:51:29.755 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:51:34.216 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:51:34.225 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:51:34.225 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:51:34.349 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:51:34.622 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:51:35.115 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-06-28 20:51:37.535 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:51:37.578 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 9.452 seconds (JVM running for 10.755)
+2019-06-28 20:51:43.714 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:51:44.171 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:51:44.486 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: null
+2019-06-28 20:51:44.587 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 0
+2019-06-28 20:55:06.393 [ http-nio-8081-exec-5 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select id from user where id=? 
+2019-06-28 20:55:06.395 [ http-nio-8081-exec-5 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: null
+2019-06-28 20:55:06.397 [ http-nio-8081-exec-5 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 0
+2019-06-28 20:55:32.929 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-06-28 20:55:33.075 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-06-28 20:55:34.247 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:55:34.247 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:55:34.247 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:55:36.055 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:36.057 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:55:36.058 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:55:36.202 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:55:36.284 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:55:36.450 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-06-28 20:55:37.640 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:37.649 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.468 seconds (JVM running for 250.827)
+2019-06-28 20:55:44.139 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-06-28 20:55:44.148 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-06-28 20:55:44.952 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:55:44.953 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:55:44.953 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:55:46.178 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:46.179 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:55:46.179 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:55:46.395 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:55:46.429 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:55:46.613 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-06-28 20:55:47.556 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:47.982 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.148 seconds (JVM running for 261.158)
+2019-06-28 20:55:49.510 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-06-28 20:55:49.516 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-06-28 20:55:50.145 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:55:50.145 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:55:50.146 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:55:50.746 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:50.747 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:55:50.747 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:55:50.769 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:55:50.852 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:55:50.917 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-06-28 20:55:51.521 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:51.526 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.518 seconds (JVM running for 264.703)
+2019-06-28 20:55:55.053 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-06-28 20:55:55.067 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-06-28 20:55:55.797 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:55:55.797 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:55:55.797 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:55:56.302 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:56.302 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:55:56.303 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:55:56.322 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:55:56.360 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-06-28 20:55:58.283 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 20:55:58.284 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 20:55:58.284 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 20:55:58.970 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:55:58.971 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 20:55:58.973 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 20:55:59.006 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 20:55:59.208 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 20:55:59.321 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-06-28 20:56:00.142 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 20:56:00.149 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.908 seconds (JVM running for 273.326)
+2019-06-28 20:56:03.721 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 20:56:03.733 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select * from user where id=? 
+2019-06-28 20:56:03.736 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: null
+2019-06-28 20:56:03.808 [ http-nio-8081-exec-2 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 0
+2019-06-28 20:56:10.399 [ http-nio-8081-exec-3 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select * from user where id=? 
+2019-06-28 20:56:10.401 [ http-nio-8081-exec-3 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: null
+2019-06-28 20:56:10.404 [ http-nio-8081-exec-3 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 0
+2019-06-28 20:57:02.040 [ http-nio-8081-exec-4 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==>  Preparing: select * from user where id=? 
+2019-06-28 20:57:02.117 [ http-nio-8081-exec-4 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - ==> Parameters: 1(String)
+2019-06-28 20:57:02.142 [ http-nio-8081-exec-4 ] - [ DEBUG ] [ com.aistar.mapper.UserMapper.findById : 159 ] - <==      Total: 1
+2019-06-28 21:03:23.107 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-06-28 21:03:23.114 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-06-28 21:03:24.395 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:03:24.396 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:03:24.396 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:03:29.240 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:03:29.241 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:03:29.241 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:03:29.879 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:03:29.879 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 21:03:29.880 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 21:03:29.904 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 21:03:29.954 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 21:03:30.039 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-06-28 21:03:30.887 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:03:30.895 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.688 seconds (JVM running for 724.072)
+2019-06-28 21:03:33.730 [ Thread-37 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-06-28 21:03:33.736 [ Thread-37 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-06-28 21:03:34.916 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:03:34.916 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:03:34.916 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:03:37.644 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:03:37.644 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:03:37.644 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:03:37.936 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:03:37.937 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 21:03:37.937 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 21:03:37.952 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 21:03:38.031 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 21:03:38.085 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-06-28 21:03:38.444 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:03:38.447 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 0.823 seconds (JVM running for 731.625)
+2019-06-28 21:05:30.346 [ Thread-46 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-7} closing ...
+2019-06-28 21:05:30.376 [ Thread-46 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-7} closed
+2019-06-28 21:05:31.218 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:05:31.219 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:05:31.219 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:05:32.091 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:05:32.092 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 21:05:32.092 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 21:05:32.390 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-1].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 21:05:32.468 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2019-06-28 21:05:34.948 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 15980 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-06-28 21:05:34.948 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 21:05:34.948 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-06-28 21:05:35.394 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:05:35.395 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-06-28 21:05:35.395 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 21:05:35.414 [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat-2].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-06-28 21:05:35.458 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-06-28 21:05:35.592 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-8} inited
+2019-06-28 21:05:36.137 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-06-28 21:05:36.141 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.227 seconds (JVM running for 849.318)

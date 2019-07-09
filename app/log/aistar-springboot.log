@@ -1,0 +1,192 @@
+2019-07-05 10:16:22.140 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:16:22.212 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:16:22.212 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:16:27.573 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:16:27.660 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:16:27.661 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:16:27.913 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:16:28.202 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:16:29.138 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-05 10:16:31.375 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:16:31.534 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 11.944 seconds (JVM running for 30.035)
+2019-07-05 10:18:26.544 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-05 10:19:13.816 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-05 10:19:13.932 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-05 10:19:15.078 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:19:15.078 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:19:15.078 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:19:18.024 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:19:18.025 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:19:18.025 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:19:19.361 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:19:19.417 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:19:19.550 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-05 10:19:20.645 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:19:20.649 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 5.807 seconds (JVM running for 199.149)
+2019-07-05 10:19:56.159 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-07-05 10:19:56.170 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-07-05 10:19:56.994 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:19:56.995 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:19:56.996 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:19:58.311 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:19:58.312 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:19:58.313 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:19:59.186 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:19:59.221 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:19:59.335 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-07-05 10:20:00.171 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:20:00.175 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 3.3 seconds (JVM running for 238.676)
+2019-07-05 10:27:25.309 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-07-05 10:27:25.313 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-07-05 10:27:25.699 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:27:25.699 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:27:25.699 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:27:26.070 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:26.070 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:27:26.071 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:27:26.196 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:27:26.228 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:27:26.284 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-07-05 10:27:26.649 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:26.660 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 0.998 seconds (JVM running for 685.16)
+2019-07-05 10:27:30.278 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-07-05 10:27:30.285 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-07-05 10:27:30.789 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:27:30.789 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:27:30.790 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:27:31.356 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:31.357 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:27:31.357 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:27:31.374 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:27:31.413 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:27:31.469 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-07-05 10:27:32.290 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:32.295 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.567 seconds (JVM running for 690.796)
+2019-07-05 10:27:33.800 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-07-05 10:27:33.959 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-07-05 10:27:34.882 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:27:34.883 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:27:34.883 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:27:36.458 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:36.461 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:27:36.462 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:27:36.500 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:27:36.578 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:27:36.768 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-07-05 10:27:37.784 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:37.788 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.955 seconds (JVM running for 696.289)
+2019-07-05 10:27:50.435 [ Thread-34 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-07-05 10:27:50.439 [ Thread-34 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-07-05 10:27:51.652 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 11348 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:27:51.653 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:27:51.653 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:27:52.155 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:52.156 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:27:52.156 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:27:52.175 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:27:52.241 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:27:52.357 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-07-05 10:27:53.227 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:27:53.232 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.663 seconds (JVM running for 711.732)
+2019-07-05 10:31:54.324 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:31:54.327 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:31:54.328 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:31:58.499 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:31:58.519 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:31:58.520 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:31:58.691 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:31:58.928 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:31:59.461 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-05 10:32:01.300 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:32:01.350 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 8.559 seconds (JVM running for 10.268)
+2019-07-05 10:32:07.270 [ http-nio-8081-exec-2 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-05 10:32:59.431 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-1} closing ...
+2019-07-05 10:32:59.480 [ Thread-6 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-1} closed
+2019-07-05 10:33:00.169 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:00.170 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:00.170 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:00.861 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:00.861 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:00.862 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:01.387 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:01.513 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:01.704 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-2} inited
+2019-07-05 10:33:02.234 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:02.239 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.151 seconds (JVM running for 71.158)
+2019-07-05 10:33:11.000 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-2} closing ...
+2019-07-05 10:33:11.003 [ Thread-10 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-2} closed
+2019-07-05 10:33:11.434 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:11.435 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:11.435 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:11.888 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:11.888 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:11.888 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:11.947 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:11.996 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:12.086 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-3} inited
+2019-07-05 10:33:12.834 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:12.844 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.446 seconds (JVM running for 81.764)
+2019-07-05 10:33:15.256 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-3} closing ...
+2019-07-05 10:33:15.263 [ Thread-16 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-3} closed
+2019-07-05 10:33:16.618 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:16.619 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:16.619 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:17.320 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:17.321 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:17.321 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:17.358 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:17.386 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:17.437 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-4} inited
+2019-07-05 10:33:18.006 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:18.010 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.45 seconds (JVM running for 86.93)
+2019-07-05 10:33:27.472 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-4} closing ...
+2019-07-05 10:33:27.479 [ Thread-22 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-4} closed
+2019-07-05 10:33:28.270 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:28.270 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:28.270 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:28.988 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:28.989 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:28.989 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:29.042 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:29.096 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:29.193 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-5} inited
+2019-07-05 10:33:29.815 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:29.819 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.59 seconds (JVM running for 98.738)
+2019-07-05 10:33:52.234 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-5} closing ...
+2019-07-05 10:33:52.249 [ Thread-28 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-5} closed
+2019-07-05 10:33:52.964 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:52.965 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:52.965 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:53.698 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:53.700 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:53.702 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:53.726 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:53.802 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:53.872 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-6} inited
+2019-07-05 10:33:55.427 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:55.431 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 2.564 seconds (JVM running for 124.351)
+2019-07-05 10:33:57.028 [ Thread-34 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-6} closing ...
+2019-07-05 10:33:57.044 [ Thread-34 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 2020 ] - {dataSource-6} closed
+2019-07-05 10:33:57.760 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 4340 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:33:57.761 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:33:57.761 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:33:58.137 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:58.137 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:33:58.138 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:33:58.159 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:33:58.206 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:33:58.286 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-7} inited
+2019-07-05 10:33:58.828 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:33:58.832 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 1.1 seconds (JVM running for 127.751)
+2019-07-05 10:34:25.535 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 50 ] - Starting SpringbootDemoApplication on innocent with PID 2072 (D:\springboot_demo\target\classes started by js in D:\springboot_demo)
+2019-07-05 10:34:25.538 [ restartedMain ] - [ DEBUG ] [ com.aistar.SpringbootDemoApplication : 53 ] - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-05 10:34:25.539 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 650 ] - The following profiles are active: dev
+2019-07-05 10:34:28.633 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:34:28.641 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2019-07-05 10:34:28.642 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-05 10:34:28.779 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring embedded WebApplicationContext
+2019-07-05 10:34:28.946 [ restartedMain ] - [ INFO  ] [ c.a.d.s.b.a.DruidDataSourceAutoConfigure : 56 ] - Init DruidDataSource
+2019-07-05 10:34:29.334 [ restartedMain ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1003 ] - {dataSource-1} inited
+2019-07-05 10:34:30.340 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2019-07-05 10:34:30.424 [ restartedMain ] - [ INFO  ] [ com.aistar.SpringbootDemoApplication : 59 ] - Started SpringbootDemoApplication in 5.743 seconds (JVM running for 6.528)
+2019-07-05 10:34:40.116 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat].[localhost].[/boot] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'

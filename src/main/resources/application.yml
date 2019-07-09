@@ -1,0 +1,11 @@
+---
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#  type-aliases-package: com.aistar.entity
+
+---
+#用于激活某个环境的配置
+spring:
+  profiles:
+    active: dev
